@@ -86,7 +86,7 @@ module.exports = function(file, api, options) {
           [j.importDefaultSpecifier(j.identifier('PropTypes'))],
           j.literal(MODULE_NAME)
         );
-        j(path).insertBefore(importStatement);
+        j(path).insertAfter(importStatement);
         return;
       }
     }
